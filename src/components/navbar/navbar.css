@@ -1,0 +1,80 @@
+/* navbar styling */
+nav {
+  position: fixed;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 998;
+  transition: all 0.3s ease;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+nav.sticky {
+  background: #191929;
+  padding: 13px 0;
+}
+nav .navbar {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+nav .navbar .menu {
+  display: flex;
+  position: relative;
+}
+nav .navbar .menu li {
+  list-style: none;
+  margin: 0 8px;
+}
+.navbar .menu a {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(153, 121, 240);
+  padding: 7px 20px;
+  transition: all 0.4s ease;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 2px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.navbar .menu a:hover {
+  background-color: rgb(231, 230, 230);
+  color: #2d5bb3;
+}
+nav.sticky .menu a {
+  color: #2d5bb3;
+}
+nav.sticky .menu a:hover {
+  color: #0e2431;
+}
+.navbar .media-icons a {
+  color: #fff;
+  font-size: 18px;
+  margin: 0 6px;
+}
+
+@media (max-width: 750px) {
+  nav {
+    height: 35px;
+  }
+  nav .navbar .menu a {
+    font-size: 13px;
+    display: block;
+    color: #4070f4;
+    margin: 5px 0;
+    padding: 7px 5px;
+  }
+  nav.sticky .menu a:hover {
+    color: #4070f4;
+  }
+  nav .navbar .media-icons {
+    display: none;
+  }
+}
